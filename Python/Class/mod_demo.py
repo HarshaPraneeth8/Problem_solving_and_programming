@@ -1,0 +1,13 @@
+import arith_funcs
+f=float(input("Enter the first number: "))
+s=float(input("Enter the second number: "))
+sm=arith_funcs.add(f,s)
+sub=arith_funcs.sub(f,s)
+div=arith_funcs.div(f,s)
+mult=arith_funcs.mult(f,s)
+rema=arith_funcs.rem(f,s)
+print("\n","The sum of the numbers is: ",sm,"\n")
+print("The product of the numbers is: ", mult, "\n")
+print("The division of the numbers is: ", div, "\n")
+print("The subtraction of the numbers is: ", sub, "\n")
+print("The remainder after dividing the numbers is: ", rema, "\n")

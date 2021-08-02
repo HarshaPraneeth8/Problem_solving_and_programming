@@ -1,0 +1,9 @@
+The Cherenkov effect occurs when a particle carrying an electric charge 
+travels through a transparent medium like water or air. If the particle travels 
+faster than light in this medium, its passage causes a brief flash of light, 
+a Cherenkov light.
+The effect is named after the Soviet physicist Pavel Alekseyevich
+Cherenkov (1904-1990) who discovered the phenomenon and obtained the Nobel
+Prize in Physics for his discovery in 1958.
+
+
