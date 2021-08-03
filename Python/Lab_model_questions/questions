@@ -1,0 +1,132 @@
+We can define the sum from 1 to x (i.e. 1 + 2 + ... + x) recursively as follows for integer x ≥ 1: 1, if x = 1 x + sum from 1 to x-1 if x > 1 Complete the following Python program to compute the sum 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 recursively: 
+def main(): 
+# compute and print 1 + 2 + ... + 10 
+
+print sum(10) 
+
+def sum(x): 
+
+# you complete this function recursively 
+
+main()
+
+2. Given an integer 'n' write a program to generate a dictionary with (i, i*i) such that i is  an integer between 1 and n (both included). The program should then print the dictionary. 
+                     Input and Output
+                     Enter a number 5
+                     {1:1, 2:4, 3:9, 4:16, 5:25}
+
+3. a) Write a program to print each line of a file in reverse order. 
+    b) Write a program to compute the number of characters, words and lines in a file.
+
+
+4. a) Write a function dups to find all duplicates in the list. 
+    b) Write a function unique to find all the unique elements of a list.
+
+
+5. a) Write a function cumulative_product to compute cumulative product of a list of    
+         numbers. 
+     b) Write a function reverse to reverse a list. Without using the reverse function.
+
+6. a) Write a program that defines a matrix and prints.
+    b) Write a program to perform addition of two square matrices.
+    c) Write a program to perform multiplication of two square matrices.
+
+7. Any fraction can be written as the division of two integers. You could express this in  Python as a tuple – (numerator, denominator). Write functions for each of the following. They must use the tuple representation to return fractions. 
+        a. Given two fractions as tuples, multiply them. 
+        b. Given two fractions as tuples, divide them. 
+        c. Given a list of fractions as a tuple, return the one that is smallest in value. Also write a small command-line interface such that the user running your script sees something like this: 
+== Multiplication and Division == 
+Enter a fraction >>> 5/3 
+Enter a fraction >>> 10/3 
+Multiplication of the fractions: 50/9 
+Division of the first by the second: 5/10 
+== Smallest fraction == 
+Enter a fraction >>> 1/3 
+Enter a fraction >>> 10/3 
+Enter a fraction >>> 6/4 
+Enter a fraction >>> stop 
+Smallest fraction: 1/3
+8. Use a for loop, range, and turtle to draw a spiral. It does not need to perfectly resemble the example.
+Turtle
+
+9. Take in numbers as input until “stop” is entered. Then split the numbers into three lists: one containing all the numbers, one containing all even values, and one containing all odd. Print out all three lists, as well as each list’s sum and average. Assume all input values are integers.
+
+Sample: 1 Input a number >>> 1 
+Input a number >>> 5 
+Input a number >>> 8 
+Input a number >>> 2 
+Input a number >>> 8 
+Input a number >>> 100 
+Input a number >>> 3 
+Input a number >>> 7
+Input a number >>> 27
+Input a number >>> 5 
+Input a number >>> stop 
+All numbers: [1, 5, 8, 2, 8, 100, 3, 7, 27, 5] 
+Average of all numbers: 16.6
+Sum of all numbers: 166
+Even numbers: [8, 2, 8, 100] 
+Average of even numbers: 29.5
+Sum of even numbers: 118 
+Odd numbers: [1, 5, 3, 7, 27, 5] 
+Average of odd numbers: 8.0
+Sum of odd numbers: 48
+10. Take in numbers as input until “stop” is entered. As you take in each number, insert it into a list so that the list is sorted in ascending order. That is, look through the list until you find the place where the new element belongs, then use .insert() to place it there. If the number is already in the list, do not add it again. After “stop” is entered, print out the list. 
+Do not use any of Python’s built-in sorting functions. You cannot use .sort() for this exercise. 
+Sample:
+Input a number >>> 12 
+Input a number >>> 5.2 
+Input a number >>> 73 
+Input a number >>> 45 
+Input a number >>> 100 
+Input a number >>> -5 
+Input a number >>> 2.3 
+Input a number >>> stop 
+[-5.0, 2.3, 5.2, 12.0, 45.0, 73.0, 100.0]
+
+What happens in the background: 
+Input a number >>> 12
+List contains [12.0] 
+Input a number >>> 5.2
+List contains [5.2, 12.0] 
+Input a number >>> 73
+List contains [5.2, 12.0, 73.0] 
+Input a number >>> 45 
+List contains [5.2, 12.0, 45.0, 73.0] 
+Input a number >>> 100 
+List contains [5.2, 12.0, 45.0, 73.0, 100.0] 
+Input a number >>> -5 
+List contains [-5.0, 5.2, 12.0, 45.0, 73.0, 100.0] 
+Input a number >>> 2.3 
+List contains [-5.0, 2.3, 5.2, 12.0, 45.0, 73.0, 100.0] 
+Input a number >>> stop 
+[-5.0, 2.3, 5.2, 12.0, 45.0, 73.0, 100.0]
+11. Write the following functions: overlap() Given two lists, find a list of the elements common to both lists and return it. join() Given two lists, join them together to be one list without duplicate elements and return that list. Write a small command line interface that is not part of these functions that will look something like this:
+List 1 
+Enter number >>> 1 
+Enter number >>> 2 
+Enter number >>> 4.5 
+List 1 is [1.0, 2.0, 4.5] 
+List 2 
+Enter number >>> 2 9 
+Enter number >>> 4.5 
+Enter number >>> 5
+List 2 is [2.0, 4.5, 5.0] 
+Overlap is [2.0, 4.5]
+Join is [1.0, 2.0, 4.5, 5.0]
+12. Create a tuple of student’s data by including roll no, name, and marks for 3 subjects. What will be the output of t = tuple(‘TutorialAICSIP’)?  Explain it.
+
+13.  a) Write a program to read email IDs of n number of students and store them in a tuple. Create two new tuples, one to store only the usernames from the email IDs and second to store domain names from the email ids. Print all three tuples at the end of the program. 
+      b) Write a program to input names of n students and store them in a tuple. Also, input a name from the user and find if this student is present in the tuple or not. We can accomplish these by: (a) writing a user defined function (b) using the built-in function.
+
+14. Write a program to input your friends’ names and their Phone Numbers and store them in the dictionary as the key-value pair. Perform the following operations on the dictionary:
+a) Display the name and phone number of all your friends
+b) Add a new key-value pair in this dictionary and display the modified dictionary
+c) Delete a particular friend from the dictionary
+d) Modify the phone number of an existing friend
+e) Check if a friend is present in the dictionary or not
+f) Display the dictionary in sorted order of names
+15.  a) Write a function in python to read the content from a text file "myfile.txt" line              by line and display the same on screen. 
+      b) Write a function in Python to count and display the total number of words in             the above text file. 
+      c)  Write a function to find and display the occurrence of the word "the". 
+      d) Write a function in Python to count words in a text file those are ending with             alphabet "e".
